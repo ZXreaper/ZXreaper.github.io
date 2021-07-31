@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>论文笔记《NPA: Neural News Recommendation with Personalized Attention》</title>
+      <link href="/2021/07/31/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%E3%80%8ANPA-Neural-News-Recommendation-with-Personalized-Attention%E3%80%8B/"/>
+      <url>/2021/07/31/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%E3%80%8ANPA-Neural-News-Recommendation-with-Personalized-Attention%E3%80%8B/</url>
+      
+        <content type="html"><![CDATA[<p> 本文主要介绍的是在基于深度学习的推荐系统中设计一个Personalized Attention结构使得深度神经网络可以有效地把握住：同一个用户对不同文章题目的关注点、同一个word在不同文章题目（或者说不同语境下）中的重要程度。基于此，文章所介绍的方法设计了news-level、word-level两种级别的Personalized Attention。</p> <span id="more"></span> <h1 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h1><ol><li>不是所有某一用户点击的新闻，都能反映该用户的偏好；</li><li>同一篇新闻标题，不同的用户的关注程度是不同的，比如对于一篇体育报道，爱好体育的人就喜欢看，不爱好体育的人就不会感兴趣；</li><li>在一篇新闻标题中，不同的单词对于学习该新闻的表示的贡献是不同的，比如“Crazy Cleaning Tips That Actually Work”这个标题中，’Crazy’这个单词的信息量就很大，而’That’的信息量就不如’Crazy’；</li><li>在一篇新闻标题中，对于学习不同的用户的偏好，不同的单词所带来的贡献是不同的，比如“Crazy Cleaning Tips That Actually Work”这个标题，用户一可能更关注“Crazy”，而用户二可能更关注”Actually Work”这个词，因此不同的用户在看同一篇文章题目时关注点会存在差异，每个单词对不同的用户影响力是不同的；</li></ol><p>因此，基于以上这几个原因，<strong>作者提出了他的观点：对不同用户要进行个性化的处理；对于同一个用户来说，每个单词也要进行个性化的处理。</strong></p><blockquote><p>原文：Therefore, modeling the different informativeness of words and news for different users may be useful for learning better representations of users for accurate news recommendation.</p></blockquote><p>这样一来，每个用户之间是不同的，每个单词对于每个用户来说的对用户表征的影响程度也是不同的。</p><h1 id="Approach"><a href="#Approach" class="headerlink" title="Approach"></a>Approach</h1><p><img src="/.io//07/31/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0%E3%80%8ANPA-Neural-News-Recommendation-with-Personalized-Attention%E3%80%8B/figure1.png" alt="figure1"></p><p>分为3个部分：News Encoder、User Encoder、Click Predictor。</p><h2 id="News-Encoder"><a href="#News-Encoder" class="headerlink" title="News Encoder"></a>News Encoder</h2><h2 id="User-Encoder"><a href="#User-Encoder" class="headerlink" title="User Encoder"></a>User Encoder</h2><h2 id="Click-Predictor"><a href="#Click-Predictor" class="headerlink" title="Click Predictor"></a>Click Predictor</h2><h1 id="Experiment"><a href="#Experiment" class="headerlink" title="Experiment"></a>Experiment</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Recommendation System </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>My first Hexo bolg!</title>
       <link href="/2021/07/27/My-first-Hexo-bolg/"/>
       <url>/2021/07/27/My-first-Hexo-bolg/</url>
